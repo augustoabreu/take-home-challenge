@@ -1,6 +1,13 @@
 import Fuse from 'fuse.js';
 
-const MODELS = [
+export type Model = {
+  id: string;
+  modified: number;
+  type: string;
+  author?: string;
+}
+
+const MODELS: Model[] = [
   {
     "id": "gpt2",
     "modified": 1621441559000,
@@ -577,10 +584,11 @@ const MODELS = [
 ];
 
 const fuse = new Fuse(MODELS, {
-  keys: ['id', 'author', 'type']
+  keys: ['id', 'author', 'type'],
+  includeScore: true,
 })
 
-function search(term) {
+function search(term: string | Fuse.Expression) {
   return fuse.search(term);
 }
 

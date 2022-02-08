@@ -1,0 +1,44 @@
+.SearchValues {
+  color: white;
+}
+
+.SearchValues__type {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #aaa;
+}
+
+.SearchValues__type-wrapper:not(:first-of-type) .SearchValues__type {
+  margin-top: 12px;
+  border-top: 1px solid #aaa;
+  padding-top: 8px;
+}
+
+.SearchValues__model {
+  display: block;
+  width: calc(100% + 16px);
+  text-align: left;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+  margin: 0;
+  padding: 4px 8px;
+  margin-left: -8px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  outline: 0;
+}
+
+.SearchValues__model:focus {
+  background-color: rgb(29, 97, 143);
+}
+
+.SearchValues__model-title,
+.SearchValues__model-updated {
+  margin: 0;
+}
+
+.SearchValues__model-updated {
+  font-size: 12px;
+}

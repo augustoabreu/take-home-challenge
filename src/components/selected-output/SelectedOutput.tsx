@@ -1,6 +1,5 @@
-import React from 'react'
 
-function SelectedOutput({ selected = 'Nothing selected' }) {
+export const SelectedOutput = ({ selected = 'Nothing selected' }) => {
   const selectedString = selected.toString();
   return (
     <div className="Output" data-cy="selected-output">
@@ -9,5 +8,3 @@ function SelectedOutput({ selected = 'Nothing selected' }) {
     </div>
   );
 }
-
-export default SelectedOutput;

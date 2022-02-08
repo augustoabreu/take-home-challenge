@@ -1,7 +1,6 @@
-import React from 'react';
-import Logo from './Logo';
+import { Logo } from '../logo/Logo';
 
-function Instructions() {
+export const Instructions = () => {
   return (
     <div className="Instructions">
       <div className="Header">
@@ -27,5 +26,3 @@ function Instructions() {
     </div>
   )
 }
-
-export default Instructions;
